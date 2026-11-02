@@ -1,16 +1,16 @@
 {
-  "tag_name": "v0.48.2",
-  "commit": "6da8dcadac0fc072fd29fc204c2b52d4f6e5745b",
-  "name": "Unwip Dev 0.48.2",
-  "body": "- Record: \u2039 Recordings in the player and the video window takes you back to the list of recordings, so finding the right one doesn't mean starting over. Esc does the same.\n- Record: replay videos are made much faster than they play on PC and Mac (and wherever the device can), and still play at the speed you pick. An 11-second test replay took about 2 seconds to make.\n- Record on PC and Mac: choose where videos and reports are saved, at the bottom of the recordings list. They go straight there (Videos\\Unwip to start with), or untick \"Save there without asking\" to pick each time.\n\nsha256: e47a33f254362696889b54cf95abe8a9fa3beabe8167cec9931cff82fb67c9f4",
+  "tag_name": "v0.48.3",
+  "commit": "b5645df892e81417a5a8c6bdffb3e9e8267ba086",
+  "name": "Unwip Dev 0.48.3",
+  "body": "- Record on PC and Mac: where videos and reports are saved is now at the bottom of the Record window and in Settings \u203a Recordings and videos, so you can change it before you've made a single recording. Before, it was only in the recordings list, which doesn't open until there's a replay.\n\nsha256: 7960f0fc4991588014e83e8b290f96283b82ce2c03ed61776ebf3359bdbd3a2f",
   "assets": [
     {
-      "name": "unwip-dev-app-0.48.2.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.2.zip"
+      "name": "unwip-dev-app-0.48.3.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.3.zip"
     },
     {
-      "name": "unwip-dev-app-0.48.2.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.2.zip.sha256"
+      "name": "unwip-dev-app-0.48.3.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.3.zip.sha256"
     }
   ]
 }
