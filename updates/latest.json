@@ -1,15 +1,15 @@
 {
-  "tag_name": "v0.48.3",
-  "name": "Unwip 0.48.3",
-  "body": "- Record on PC and Mac: where videos and reports are saved is now at the bottom of the Record window and in Settings \u203a Recordings and videos, so you can change it before you've made a single recording. Before, it was only in the recordings list, which doesn't open until there's a replay.\n\nsha256: a796d2e89b4c123b227346b62aac38138ddd201587258cd55490038a5d87470a",
+  "tag_name": "v0.48.5",
+  "name": "Unwip 0.48.5",
+  "body": "- Paste matching manuscript style keeps italics, bold and underline, and your paragraphs and empty lines, while the words take your book's font and size. Before, it kept only the plain text.\n- Text pasted from another app keeps its own font, and Unwip adds the closest font it has built in as a backup, used when a device doesn't have the original.\n- Leave a book and come back, and you're where you last typed: the same chapter, with the cursor at that spot. On an iPhone or iPad it scrolls there without bringing up the keyboard. Each device remembers this for each book.\n- Settings: the section headings are bolder and easier to spot, labels that only repeated their button are gone (the buttons sit together instead), and the sections that save straight away have a small green tag.\n- PC: cutting a line and pasting it into another paragraph keeps your book's font. Lines already pasted that lost it are mended when you open the chapter.\n\nsha256: 6084512703f2f290e2e74e5d81b50b13698839bb57fc6fde613afa060db14e5f",
   "assets": [
     {
-      "name": "unwip-app-0.48.3.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.3.zip"
+      "name": "unwip-app-0.48.5.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.5.zip"
     },
     {
-      "name": "unwip-app-0.48.3.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.3.zip.sha256"
+      "name": "unwip-app-0.48.5.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.5.zip.sha256"
     }
   ]
 }
