@@ -1,16 +1,16 @@
 {
-  "tag_name": "v0.48.3",
-  "commit": "b5645df892e81417a5a8c6bdffb3e9e8267ba086",
-  "name": "Unwip Dev 0.48.3",
-  "body": "- Record on PC and Mac: where videos and reports are saved is now at the bottom of the Record window and in Settings \u203a Recordings and videos, so you can change it before you've made a single recording. Before, it was only in the recordings list, which doesn't open until there's a replay.\n\nsha256: 7960f0fc4991588014e83e8b290f96283b82ce2c03ed61776ebf3359bdbd3a2f",
+  "tag_name": "v0.48.4",
+  "commit": "86b0b6c79d27563a9eb2e7d2704d6a488fdbe032",
+  "name": "Unwip Dev 0.48.4",
+  "body": "- PC: cutting a line and pasting it into another paragraph keeps your book's font. Lines already pasted that lost it are mended when you open the chapter.\n\nsha256: 1250496063ad2d30a4fbdef813499b609c004cfcc1c1be0d497c8599b70cc72f",
   "assets": [
     {
-      "name": "unwip-dev-app-0.48.3.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.3.zip"
+      "name": "unwip-dev-app-0.48.4.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.4.zip"
     },
     {
-      "name": "unwip-dev-app-0.48.3.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.3.zip.sha256"
+      "name": "unwip-dev-app-0.48.4.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.4.zip.sha256"
     }
   ]
 }
