@@ -1,16 +1,16 @@
 {
-  "tag_name": "v0.48.12",
-  "commit": "366b666b4bcad7e24a546a1253bc900e3e01d603",
-  "name": "Unwip Dev 0.48.12",
-  "body": "- Dictate now listens by itself on an iPhone, iPad or Mac in Safari: tap Dictate and start talking, and your words go in at the cursor. What it's still hearing shows in a small box at the top. The first time, your device asks to use the microphone. It uses Apple's own speech recognition, the same as the keyboard's mic, so Unwip itself still has no AI. On a PC, use Windows+H as before.\n\nsha256: f780736fd060e6061d67e90104699aeef5b78b67fe45561bcf624743fd518838",
+  "tag_name": "v0.48.13",
+  "commit": "6bbb43059ad5e67136822d63c1fa1679c9487afd",
+  "name": "Unwip Dev 0.48.13",
+  "body": "- iPad and web: \"Open in another tab\" could appear with no other tab open, and \"Close it there and open here\" then got stuck. A tab the iPad had put to sleep in the background could still hold the book. Now Unwip takes the book over when that tab doesn't answer, and if the sleeping tab ever wakes, it saves and closes the book there. Leaving a book and opening it again straight away no longer trips it either.\n\nsha256: 75f0b9b5dc7508536fbefbfb27b7480a03f0f65b526b01ab3d3268b3b65bf549",
   "assets": [
     {
-      "name": "unwip-dev-app-0.48.12.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.12.zip"
+      "name": "unwip-dev-app-0.48.13.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.13.zip"
     },
     {
-      "name": "unwip-dev-app-0.48.12.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.12.zip.sha256"
+      "name": "unwip-dev-app-0.48.13.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.13.zip.sha256"
     }
   ]
 }
