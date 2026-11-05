@@ -4,13 +4,13 @@ window.ICONS = (function () {
   return {
     panel: svg('<rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M15 4.5v15"/>'),
     revise: svg('<path d="M4 20h4L19 9a2.1 2.1 0 0 0-4-4L4 16z"/><path d="M13.5 6.5l4 4"/>'),
+    mic: svg('<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21"/>'),
     speaker: svg('<path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/>'),
     chart: svg('<path d="M4 20h16"/><path d="M7 16v-5M11 16V7M15 16v-3M19 16V9"/>'),
     series: svg('<path d="M5 4h4v16H5zM10 4h4v16h-4z"/><path d="M15.5 5.2l3.8-1 3.7 14.5-3.8 1z"/>'),
     caretDown: svg('<path d="M6 9l6 6 6-6"/>'),
     comment: svg('<path d="M20 14a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 12h5"/>'),
     footnote: svg('<path d="M4 7h9M4 12h9M4 17h6"/><path d="M17 5.5l2-1.5v6"/><path d="M16 20h6"/>'),
-    lifebuoy: svg('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M5.6 5.6l3.6 3.6M14.8 14.8l3.6 3.6M18.4 5.6l-3.6 3.6M9.2 14.8l-3.6 3.6"/>'),
     check: svg('<path d="M5 12.5l4.5 4.5L19 7.5"/>'),
     steps: svg('<path d="M9 6h11M9 12h11M9 18h11"/><path d="M4 6l1 1 2-2M4 12l1 1 2-2"/><circle cx="5" cy="18" r="1"/>'),
     back: svg('<path d="M15 18l-6-6 6-6"/>'),
@@ -30,6 +30,7 @@ window.ICONS = (function () {
     alignCenter: svg('<path d="M4 6h16M7 10h10M4 14h16M7 18h10"/>'),
     alignRight: svg('<path d="M4 6h16M10 10h10M4 14h16M10 18h10"/>'),
     alignJustify: svg('<path d="M4 6h16M4 10h16M4 14h16M4 18h16"/>'),
+    sceneBreak: svg('<path d="M4.20 8.70L4.20 15.30M1.34 10.35L7.06 13.65M7.06 10.35L1.34 13.65M12.00 8.70L12.00 15.30M9.14 10.35L14.86 13.65M14.86 10.35L9.14 13.65M19.80 8.70L19.80 15.30M16.94 10.35L22.66 13.65M22.66 10.35L16.94 13.65" stroke-width="1.5"/>'),   // three asterisks: the toolbar's scene break, so it isn't mistaken for ⋯
     scene: svg('<circle cx="6" cy="12" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><circle cx="18" cy="12" r="1.2" fill="currentColor"/>'),
     clear: svg('<path d="M6 4h12M12 4l-3 16"/><path d="M15 15l5 5M20 15l-5 5"/>'),
     copy: svg('<rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/>'),
