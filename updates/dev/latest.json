@@ -1,16 +1,16 @@
 {
-  "tag_name": "v0.48.14",
-  "commit": "08b6da72486e92fb13af4f967a31b7c041a8fd73",
-  "name": "Unwip Dev 0.48.14",
-  "body": "- iPad: closing Find straight after typing in it could leave the found word marked in orange. It's cleared now.\n- Main screen: in Last 14 days, the \"goal\" label could cover the number of a day just under the goal. The label now sits above the chart.\n- iPad: the buttons at the bottom of the left panel (Settings, Recent, Search, Help, Edit and + New) fit on one line again.\n\nsha256: ec982e5e9c0eefb8ce10eadcdf56b6cae13261bf4338baaa5aab11979ac09b04",
+  "tag_name": "v0.48.15",
+  "commit": "010890a7560218b73005877876fab134c971d07d",
+  "name": "Unwip Dev 0.48.15",
+  "body": "- Typing \"- \" at the start of a line still turns it into a bullet, but pressing Backspace straight after puts your \"- \" back, so you can start a line with a plain dash.\n- iPhone: tap Aa on the formatting row to align text left, centre, right or justified.\n\nsha256: 3e4aa60bb39ed2b86c031ec592eba0d6b96d4ab282f85dede980bf89cfbf3ba4",
   "assets": [
     {
-      "name": "unwip-dev-app-0.48.14.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.14.zip"
+      "name": "unwip-dev-app-0.48.15.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.15.zip"
     },
     {
-      "name": "unwip-dev-app-0.48.14.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.14.zip.sha256"
+      "name": "unwip-dev-app-0.48.15.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.15.zip.sha256"
     }
   ]
 }
