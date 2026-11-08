@@ -1,5 +1,5 @@
-window.UNWIP_VERSION = "0.48.14";
-window.UNWIP_LATEST_NOTES = "- iPad: closing Find straight after typing in it could leave the found word marked in orange. It's cleared now.\n- Main screen: in Last 14 days, the \"goal\" label could cover the number of a day just under the goal. The label now sits above the chart.\n- iPad: the buttons at the bottom of the left panel (Settings, Recent, Search, Help, Edit and + New) fit on one line again.";
+window.UNWIP_VERSION = "0.48.16";
+window.UNWIP_LATEST_NOTES = "- New: Text layout\u2026 in Settings \u203a Appearance (also in Style and Ctrl+K). Set line spacing, first-line indent, space after paragraphs and justified text for the whole book, with an example from Dracula beside it that changes as you go. Use it for this book, new books too, or every book you have.\n- iPhone: tap Aa on the formatting row to align text left, centre, right or justified.\n- iPhone: going back to the chapter list now closes Style or any other side panel that was open.\n- Typing \"- \" at the start of a line still turns it into a bullet, but pressing Backspace straight after puts your \"- \" back, so you can start a line with a plain dash.";
 if ('serviceWorker' in navigator && location.protocol === 'https:') addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
 (function () {
   if (location.protocol !== 'https:') return;
