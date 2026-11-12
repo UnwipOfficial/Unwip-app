@@ -1,16 +1,16 @@
 {
-  "tag_name": "v0.48.16",
-  "commit": "9f52820d208c0f57501b02aa811ebd4d76a8aae5",
-  "name": "Unwip Dev 0.48.16",
-  "body": "- New: Text layout\u2026 in Settings \u203a Appearance (also in Style and Ctrl+K). Set line spacing, first-line indent, space after paragraphs and justified text for the whole book, with an example from Dracula beside it that changes as you go. Use it for this book, new books too, or every book you have.\n- iPhone: going back to the chapter list now closes Style or any other side panel that was open.\n\nsha256: 4650077a9d530d1de1d1addeb9df3113bf628426a3a4c6aa2263d7f031281e3d",
+  "tag_name": "v0.48.17",
+  "commit": "36b51636c514b053c146643c5465f7271f1021ac",
+  "name": "Unwip Dev 0.48.17",
+  "body": "- iPad and iPhone: swiping down on the left side (the Focus / Detail / Lore strip, or a list already at its end) no longer slides the whole screen and hides the top bars. If the screen has slid, it goes back.\n\nsha256: 2e234a590d67dbed753f2b4f25fe2aa9a1c449a9cd52b591981910dc4bc6106c",
   "assets": [
     {
-      "name": "unwip-dev-app-0.48.16.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.16.zip"
+      "name": "unwip-dev-app-0.48.17.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.17.zip"
     },
     {
-      "name": "unwip-dev-app-0.48.16.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.16.zip.sha256"
+      "name": "unwip-dev-app-0.48.17.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/dev/packages/unwip-dev-app-0.48.17.zip.sha256"
     }
   ]
 }
