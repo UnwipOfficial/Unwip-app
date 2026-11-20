@@ -1,15 +1,15 @@
 {
-  "tag_name": "v0.48.16",
-  "name": "Unwip 0.48.16",
-  "body": "- New: Text layout\u2026 in Settings \u203a Appearance (also in Style and Ctrl+K). Set line spacing, first-line indent, space after paragraphs and justified text for the whole book, with an example from Dracula beside it that changes as you go. Use it for this book, new books too, or every book you have.\n- iPhone: tap Aa on the formatting row to align text left, centre, right or justified.\n- iPhone: going back to the chapter list now closes Style or any other side panel that was open.\n- Typing \"- \" at the start of a line still turns it into a bullet, but pressing Backspace straight after puts your \"- \" back, so you can start a line with a plain dash.\n\nsha256: a43b0f634ace1d6d07783229e2e3ca67b4b6beb36faaf3db8f4c61d9fa9beaba",
+  "tag_name": "v0.48.18",
+  "name": "Unwip 0.48.18",
+  "body": "- iPad and iPhone: swiping down on the left side (the Focus / Detail / Lore strip, or a list already at its end) no longer slides the whole screen and hides the top bars. If the screen has slid, it goes back.\n- iPhone and iPad: if the screen video doesn't start, the message now says to choose Share Entire Screen in Apple's sharing box (picking Safari on its own doesn't work).\n- iPhone: the red \"Not recording\" bar sits above the bottom buttons instead of over them, and fits on one line.\n\nsha256: 5f8ab12c350641bd2c9ab81dff49d106fe190bb3ad03f6f2cf4eb7ed131e4da4",
   "assets": [
     {
-      "name": "unwip-app-0.48.16.zip",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.16.zip"
+      "name": "unwip-app-0.48.18.zip",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.18.zip"
     },
     {
-      "name": "unwip-app-0.48.16.zip.sha256",
-      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.16.zip.sha256"
+      "name": "unwip-app-0.48.18.zip.sha256",
+      "browser_download_url": "https://raw.githubusercontent.com/UnwipOfficial/unwip-releases/main/packages/unwip-app-0.48.18.zip.sha256"
     }
   ]
 }

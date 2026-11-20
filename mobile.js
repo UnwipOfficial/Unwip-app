@@ -229,6 +229,23 @@ window.UnwipMobile = (function () {
   }
 
   if (vv) { vv.addEventListener('resize', placeBar); vv.addEventListener('scroll', placeBar); }
+  // iPad and iPhone: with the keyboard up, a swipe on anything that can't scroll (the binder's tab strip, the top bar) or on
+  // a list already at its end slides the whole screen, top bar and all, up out of sight (owner, 13 Nov, iPad). The page
+  // never needs to move, so a swipe that no box can use is dropped, and if the screen has slid it's put back.
+  if (IOS) {
+    const canScroll = (el, dy) => { for (; el && el !== document.body && el !== document.documentElement; el = el.parentElement) {
+      const o = getComputedStyle(el).overflowY; if ((o === 'auto' || o === 'scroll') && el.scrollHeight > el.clientHeight + 1) {
+        if (dy > 0 ? el.scrollTop > 0 : el.scrollTop + el.clientHeight < el.scrollHeight - 1) return true; } } return false; };
+    let y0 = 0;
+    document.addEventListener('touchstart', e => { if (e.touches.length === 1) y0 = e.touches[0].clientY; }, { passive: true, capture: true });
+    document.addEventListener('touchmove', e => {
+      if (e.touches.length !== 1 || !e.cancelable) return;
+      const t = e.target; if (!(t instanceof Element) || t.closest('#editor, input, textarea, select, .m-fbar, .modal-back, .cmdk-back')) return;
+      if (!canScroll(t, e.touches[0].clientY - y0)) e.preventDefault();
+    }, { passive: false, capture: true });
+    const putBack = () => { if (vv && (vv.offsetTop > 0 || window.scrollY > 0) && !/^(INPUT|TEXTAREA)$/.test((document.activeElement || {}).tagName || '') && document.activeElement !== editor) window.scrollTo(0, 0); };
+    if (vv) vv.addEventListener('scroll', putBack); document.addEventListener('touchend', () => setTimeout(putBack, 60), { passive: true });
+  }
   // coming back to the app (or the cursor coming back to the page) doesn't always tell the page the keyboard is back
   // (beta, 22 Oct): place the row again then, and once more after the keyboard has finished sliding in
   const replace = () => { placeBar(); setTimeout(placeBar, 350); setTimeout(placeBar, 800); };

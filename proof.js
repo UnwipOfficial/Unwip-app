@@ -301,9 +301,10 @@ window.UnwipProof = (function () {
       });
       document.body.appendChild(remindEl);
     }
+    const TAP = matchMedia('(pointer: coarse)').matches ? 'Tap' : 'Click';
     const html = V.paused
-      ? `<i class="pf-dot off"></i><span class="pf-rt"><b>Recording paused</b><small>You’re writing in “${esc(S.project ? S.project.title : '')}”. Click to resume.</small></span><button class="btn small primary" data-act="resume">Resume</button><button class="icon-btn" data-act="hide" title="Hide until I reopen this book">✕</button>`
-      : `<i class="pf-dot"></i><span class="pf-rt"><b>Not recording</b><small>You’re writing in “${esc(S.project ? S.project.title : '')}”. Click to start recording.</small></span><button class="btn small primary" data-act="start">Start screen video</button><button class="icon-btn" data-act="hide" title="Hide until I reopen this book">✕</button>`;
+      ? `<i class="pf-dot off"></i><span class="pf-rt"><b>Recording paused</b><small>You’re writing in “${esc(S.project ? S.project.title : '')}”. ${TAP} to resume.</small></span><button class="btn small primary" data-act="resume">Resume</button><button class="icon-btn" data-act="hide" title="Hide until I reopen this book">✕</button>`
+      : `<i class="pf-dot"></i><span class="pf-rt"><b>Not recording</b><small>You’re writing in “${esc(S.project ? S.project.title : '')}”. ${TAP} to start recording.</small></span><button class="btn small primary" data-act="start">Start screen video</button><button class="icon-btn" data-act="hide" title="Hide until I reopen this book">✕</button>`;
     remindEl.classList.toggle('paused', !!V.paused);
     if (remindEl.dataset.h !== html) { remindEl.innerHTML = html; remindEl.dataset.h = html; }
     remindEl.classList.remove('hidden');
@@ -697,8 +698,19 @@ pfPlayer(document.getElementById('player'), SESSIONS, { pfPrep: pfPrep, pfApply:
     V.book = S.project ? S.project.title : 'Unwip';
     const name = `${V.book} ${new Date().toLocaleDateString('en-CA')} ${new Date().toTimeString().slice(0, 5).replace(':', '.')}`;
     let stream;
-    try { if (api.videoArm) await api.videoArm(); stream = await navigator.mediaDevices.getDisplayMedia({ video: { frameRate: q.fps }, audio: false, preferCurrentTab: true, selfBrowserSurface: 'include' }); }
-    catch (e) { console.error('screen video', e && (e.name + ': ' + e.message)); U.toast(api.platform === 'darwin' ? 'Unwip couldn’t record the screen. On a Mac, allow it in System Settings › Privacy & Security › Screen Recording, then try again.' : 'The screen video didn’t start.', 'warn', 9000); return; }
+    // iPhone and iPad: ask with nothing extra. The extra hints are for desktop browsers, and the iOS sheet offers
+    // "Safari" (just the app), which fails for a web app added to the Home Screen; Share Entire Screen works.
+    const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const ask = ios ? { video: true, audio: false } : { video: { frameRate: q.fps }, audio: false, preferCurrentTab: true, selfBrowserSurface: 'include' };
+    try { if (api.videoArm) await api.videoArm(); stream = await navigator.mediaDevices.getDisplayMedia(ask); }
+    catch (e) {
+      console.error('screen video', e && (e.name + ': ' + e.message));
+      if (e && e.name === 'NotAllowedError' && !ios) return;   // they pressed Cancel
+      const why = e && e.name ? ` <small>(${esc(e.name)})</small>` : '';
+      U.toast(ios ? `The screen video didn’t start. On iPhone and iPad, choose <b>Share Entire Screen</b> when asked, not Safari.${why}`
+        : api.platform === 'darwin' ? 'Unwip couldn’t record the screen. On a Mac, allow it in System Settings › Privacy & Security › Screen Recording, then try again.' : `The screen video didn’t start.${why}`, 'warn', 12000);
+      return;
+    }
     // where the video goes: straight to a file as it records
     V.writer = null; V.parts = null; V.path = '';
     try {
